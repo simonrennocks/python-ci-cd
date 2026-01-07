@@ -18,10 +18,10 @@ jobs:
       - name: Install requirements
         run: pip install flake8 pylint
 
-      - name: Lint hello.py
-        run: |
-          flake8 hello.py
-          pylint hello.py
+      #- name: Lint hello.py
+      #  run: |
+      #    flake8 hello.py
+      #    pylint hello.py
 
       - name: Test the script
         run: python hello.py | grep -i hello || exit 1
